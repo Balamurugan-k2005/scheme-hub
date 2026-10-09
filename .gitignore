@@ -1,0 +1,36 @@
+# Operating System & IDE Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+*.iws
+
+# Java & Maven (Backend)
+**/target/
+**/*.class
+**/*.jar
+**/*.war
+**/*.ear
+**/.mvn/
+**/mvnw
+**/mvnw.cmd
+**/uploads/*
+!**/uploads/.gitkeep
+
+# Node & React (Frontend)
+**/node_modules/
+**/dist/
+**/.env
+**/.env.local
+**/.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+**/.vite/
+
+# Logs & Temporary
+*.log
+logs/
+temp/
+tmp/

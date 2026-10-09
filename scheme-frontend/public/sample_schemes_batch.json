@@ -1,0 +1,74 @@
+[
+  {
+    "nameEn": "PM Mudra Yojana (PMMY)",
+    "nameHi": "पीएम मुद्रा योजना",
+    "nameTa": "பிரதமர் முத்ரா திட்டம்",
+    "descriptionEn": "Collateral-free institutional micro-credit loans up to ₹10 Lakhs to non-corporate, non-farm micro and small enterprises.",
+    "eligibilityDescEn": "Any Indian citizen who has a business plan for a non-farm sector income generating activity.",
+    "benefitEn": "Loans up to ₹10,00,000 (Shishu, Kishore, and Tarun categories) without collateral",
+    "benefitCalculatorExpr": "1000000",
+    "officialSourceUrl": "https://www.mudra.org.in/",
+    "departmentEn": "Department of Financial Services, Ministry of Finance",
+    "category": "FINANCIAL",
+    "beneficiaryType": "ALL",
+    "isCentral": true,
+    "status": "OPEN",
+    "rules": [
+      {
+        "fieldName": "age",
+        "operator": "GTE",
+        "ruleValue": "18",
+        "isCritical": true,
+        "messageEn": "Applicant must be at least 18 years old"
+      },
+      {
+        "fieldName": "isBusinessOwner",
+        "operator": "EQ",
+        "ruleValue": "true",
+        "isCritical": false,
+        "messageEn": "Applicant intends to establish or run micro-enterprise"
+      }
+    ],
+    "requiredDocuments": [
+      { "documentNameEn": "Aadhaar Card", "isMandatory": true },
+      { "documentNameEn": "Business Plan Proposal", "isMandatory": true },
+      { "documentNameEn": "Bank Account Statement", "isMandatory": true }
+    ]
+  },
+  {
+    "nameEn": "National Means-cum-Merit Scholarship (NMMSS)",
+    "nameHi": "राष्ट्रीय साधन-सह-योग्यता छात्रवृत्ति",
+    "nameTa": "தேசிய வருவாய்வழி மற்றும் திறன் படிப்பு உதவித்தொகை",
+    "descriptionEn": "Centrally sponsored scholarship scheme awarding scholarships to meritorious students of economically weaker sections to arrest dropout rate at class VIII.",
+    "eligibilityDescEn": "Students studying in Class IX with parental annual income not exceeding ₹3,50,000.",
+    "benefitEn": "Scholarship of ₹12,000 per annum (₹1,000 per month) for classes IX to XII",
+    "benefitCalculatorExpr": "12000",
+    "officialSourceUrl": "https://scholarships.gov.in/",
+    "departmentEn": "Department of School Education & Literacy, Ministry of Education",
+    "category": "EDUCATION",
+    "beneficiaryType": "STUDENTS",
+    "isCentral": true,
+    "status": "OPEN",
+    "rules": [
+      {
+        "fieldName": "isStudent",
+        "operator": "EQ",
+        "ruleValue": "true",
+        "isCritical": true,
+        "messageEn": "Applicant must be a currently enrolled student"
+      },
+      {
+        "fieldName": "annualIncome",
+        "operator": "LTE",
+        "ruleValue": "350000",
+        "isCritical": true,
+        "messageEn": "Annual family income must not exceed ₹3.5 Lakhs"
+      }
+    ],
+    "requiredDocuments": [
+      { "documentNameEn": "Student School ID Card", "isMandatory": true },
+      { "documentNameEn": "Income Certificate", "isMandatory": true },
+      { "documentNameEn": "Class VII/VIII Marksheet", "isMandatory": true }
+    ]
+  }
+]
